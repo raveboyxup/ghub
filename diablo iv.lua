@@ -145,7 +145,7 @@ end
 -- @param event: 事件类型
 -- @param arg: 事件参数
 function OnEvent(event, arg)
-    -- 当按下鼠标5号键时启动脚本
+    -- 当按下鼠标4号键时启动脚本,鼠标4号键要映射成scoll lock键
     if (event == "MOUSE_BUTTON_RELEASED" and arg == 4) then
         OutputLogMessage("========== 开始连续按键 ==========\n")
         LianxuAnjian()
