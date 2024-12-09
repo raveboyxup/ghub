@@ -11,13 +11,13 @@
 -- 按键配置（时间单位：毫秒，-1表示持续按下）
 local key_config = {
     -- 要循环的按键在下面添加或注释
-    -- ["q"] = {time = 500, last_press = 0},    -- Q键每500ms按一次
+    ["q"] = {time = 500, last_press = 0},    -- Q键每500ms按一次
     ["w"] = {time = 500, last_press = 0},    -- W键每500ms按一次
-    ["e"] = {time = 500, last_press = 0},     -- E键持续按下
+    ["e"] = {time = -1, last_press = 0},     -- E键持续按下
     ["r"] = {time = 500, last_press = 0},    -- R键每500ms按一次
     ["left"] = {time = 50, last_press = 0},  -- 鼠标左键每50ms按一次
     ["right"] = {time = 50, last_press = 0}, -- 鼠标右键每50ms按一次
-    -- ["space"] = {time = 50, last_press = 0}  -- 空格键每50ms按一次
+    ["space"] = {time = 50, last_press = 0}  -- 空格键每50ms按一次
 }
 
 -- 暂停状态标志（用于标记是否只循环鼠标左键）
